@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Button testButton_a = (Button) findViewById(R.id.testButton);
+    testButton_a.setOnClickListener( new View.OnClickListener() {
+                                         @Override
+                                         public void onClick(View view){
+
+                                         }
+                                     }
+
+    );
     }
 
     @Override
